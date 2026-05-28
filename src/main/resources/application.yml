@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: modular-app
+  datasource:
+    url: jdbc:postgresql://localhost:5432/modulith
+    username: modulith
+    password: modulith
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+
+server:
+  port: 8080

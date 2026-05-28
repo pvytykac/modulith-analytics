@@ -1,0 +1,838 @@
+{
+  "info": {
+    "_postman_id": "2df120e5-c182-4013-9ebd-cd62f0d0c1c1",
+    "name": "analytics",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "43816410",
+    "_collection_link": "https://go.postman.co/collection/43816410-2df120e5-c182-4013-9ebd-cd62f0d0c1c1?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "applications",
+      "item": [
+        {
+          "name": "/v1/applications",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Slack\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/v1/applications",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "v1",
+                "applications"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "/v1/applications",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/v1/applications",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "v1",
+                "applications"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "/v1/applications/:id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/v1/applications/:id",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "v1",
+                "applications",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "{{analytics.application_id}}"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "/v1/applications/:id",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Slack\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/v1/applications/:id",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "v1",
+                "applications",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "{{analytics.application_id}}"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "/v1/applications/:id",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/v1/applications/:id",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "v1",
+                "applications",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "{{analytics.application_id}}"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "users",
+      "item": [
+        {
+          "name": "/v1/users",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"displayName\": \"Pavol Vytykac\",\r\n    \"email\": \"pavol.vytykac@usu.com\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/v1/users",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "v1",
+                "users"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "/v1/users",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/v1/users",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "v1",
+                "users"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "/v1/users/:id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/v1/users/:id",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "v1",
+                "users",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "{{analytics.user_id}}"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "/v1/users/:id",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Slack\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/v1/users/:id",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "v1",
+                "users",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "{{analytics.application_id}}"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "/v1/users/:id",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/v1/users/:id",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "v1",
+                "users",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "{{analytics.application_id}}"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "licenses",
+      "item": [
+        {
+          "name": "/v1/applications/:applicationId/licenses",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Slack Free\",\r\n    \"monthlyPrice\": 0.00\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/v1/applications/:applicationId/licenses",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "v1",
+                "applications",
+                ":applicationId",
+                "licenses"
+              ],
+              "variable": [
+                {
+                  "key": "applicationId",
+                  "value": "{{analytics.application_id}}"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "/v1/applications/:applicationId/licenses",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/v1/applications/:applicationId/licenses?sort=monthlyPrice",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "v1",
+                "applications",
+                ":applicationId",
+                "licenses"
+              ],
+              "query": [
+                {
+                  "key": "sort",
+                  "value": "monthlyPrice"
+                }
+              ],
+              "variable": [
+                {
+                  "key": "applicationId",
+                  "value": "{{analytics.application_id}}"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "/v1/applications/:applicationId/licenses/:licenseId",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/v1/applications/:applicationId/licenses/:licenseId",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "v1",
+                "applications",
+                ":applicationId",
+                "licenses",
+                ":licenseId"
+              ],
+              "variable": [
+                {
+                  "key": "applicationId",
+                  "value": "{{analytics.application_id}}"
+                },
+                {
+                  "key": "licenseId",
+                  "value": "{{analytics.license_id}}"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "/v1/applications/:applicationId/licenses/:licenseId",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Slack Max\",\r\n    \"monthlyPrice\": 14.99\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/v1/applications/:applicationId/licenses/:licenseId",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "v1",
+                "applications",
+                ":applicationId",
+                "licenses",
+                ":licenseId"
+              ],
+              "variable": [
+                {
+                  "key": "applicationId",
+                  "value": "{{analytics.application_id}}"
+                },
+                {
+                  "key": "licenseId",
+                  "value": "{{analytics.license_id}}"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "/v1/applications/:applicationId/licenses/:licenseId",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/v1/applications/:applicationId/licenses/:licenseId",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "v1",
+                "applications",
+                ":applicationId",
+                "licenses",
+                ":licenseId"
+              ],
+              "variable": [
+                {
+                  "key": "applicationId",
+                  "value": "{{analytics.application_id}}"
+                },
+                {
+                  "key": "licenseId",
+                  "value": "{{analytics.license_id}}"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "accounts",
+      "item": [
+        {
+          "name": "/v1/applications/:applicationId/accounts",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"userId\": \"{{analytics.user_id}}\",\r\n    \"externalId\": \"ba87d16b-f82e-4f75-94e3-a61eba79c18b-1\",\r\n    \"lastUsed\": \"2026-05-01T00:00:00.000Z\",\r\n    \"licenseIds\": [\"b38b21b0-200b-4202-a51e-22209d8ef4f9\"]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/v1/applications/:applicationId/accounts",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "v1",
+                "applications",
+                ":applicationId",
+                "accounts"
+              ],
+              "variable": [
+                {
+                  "key": "applicationId",
+                  "value": "{{analytics.application_id}}"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "/v1/applications/:applicationId/accounts",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/v1/applications/:applicationId/accounts",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "v1",
+                "applications",
+                ":applicationId",
+                "accounts"
+              ],
+              "variable": [
+                {
+                  "key": "applicationId",
+                  "value": "{{analytics.application_id}}"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "/v1/applications/:applicationId/accounts/:accountId",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/v1/applications/:applicationId/accounts/:accountId",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "v1",
+                "applications",
+                ":applicationId",
+                "accounts",
+                ":accountId"
+              ],
+              "variable": [
+                {
+                  "key": "applicationId",
+                  "value": "{{analytics.application_id}}"
+                },
+                {
+                  "key": "accountId",
+                  "value": "{{analytics.account_id}}"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "/v1/applications/:applicationId/accounts/:accountId",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"lastUsed\": \"2026-05-02T00:00:00Z\",\r\n    \"licenseIds\": [\"db51e778-c0fb-4785-88b5-11ef099eab55\"]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/v1/applications/:applicationId/accounts/:accountId",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "v1",
+                "applications",
+                ":applicationId",
+                "accounts",
+                ":accountId"
+              ],
+              "variable": [
+                {
+                  "key": "applicationId",
+                  "value": "{{analytics.application_id}}"
+                },
+                {
+                  "key": "accountId",
+                  "value": "{{analytics.account_id}}"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "/v1/applications/:applicationId/accounts/:accountId",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/v1/applications/:applicationId/accounts/:accountId",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "v1",
+                "applications",
+                ":applicationId",
+                "accounts",
+                ":accountId"
+              ],
+              "variable": [
+                {
+                  "key": "applicationId",
+                  "value": "{{analytics.application_id}}"
+                },
+                {
+                  "key": "accountId",
+                  "value": "{{analytics.account_id}}"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "dashboard",
+      "item": [
+        {
+          "name": "application license assignment breakdown",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/v1/applications/:applicationId/analytics/licenseAssignments/dailyBreakdown?startTime=2026-05-01T00:00:00.000Z&endTime=2026-06-01T00:00:00.000Z",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "v1",
+                "applications",
+                ":applicationId",
+                "analytics",
+                "licenseAssignments",
+                "dailyBreakdown"
+              ],
+              "query": [
+                {
+                  "key": "startTime",
+                  "value": "2026-05-01T00:00:00.000Z"
+                },
+                {
+                  "key": "endTime",
+                  "value": "2026-06-01T00:00:00.000Z"
+                },
+                {
+                  "key": "accountId",
+                  "value": "{{analytics.account_id}}",
+                  "disabled": true
+                },
+                {
+                  "key": "userId",
+                  "value": "{{analytics.user_id}}",
+                  "disabled": true
+                },
+                {
+                  "key": "licenseId",
+                  "value": "{{analytics.license_id}}",
+                  "disabled": true
+                },
+                {
+                  "key": "email",
+                  "value": "pavol.vytykac@usu.com",
+                  "disabled": true
+                },
+                {
+                  "key": "minLicenseCost",
+                  "value": "0.00",
+                  "disabled": true
+                },
+                {
+                  "key": "maxLicenseCost",
+                  "value": "99.99",
+                  "disabled": true
+                },
+                {
+                  "key": "minLastUsed",
+                  "value": "2026-01-01T00:00:00.000Z",
+                  "disabled": true
+                },
+                {
+                  "key": "maxLastUsed",
+                  "value": "2027-01-01T00:00:00.000Z",
+                  "disabled": true
+                },
+                {
+                  "key": "minApplicationCreatedAt",
+                  "value": "2026-01-01T00:00:00.000Z",
+                  "disabled": true
+                },
+                {
+                  "key": "maxApplicationCreatedAt",
+                  "value": "2027-01-01T00:00:00.000Z",
+                  "disabled": true
+                }
+              ],
+              "variable": [
+                {
+                  "key": "applicationId",
+                  "value": "{{analytics.application_id}}"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "application license assignment statistics",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/v1/applications/:applicationId/analytics/licenseAssignments/statistics?startTime=2026-05-01T00:00:00.000Z&endTime=2026-06-01T00:00:00.000Z&accountId={{analytics.account_id}}&userId={{analytics.user_id}}&licenseId={{analytics.license_id}}&email=pavol.vytykac@usu.com&minLicenseCost=0.00&maxLicenseCost=99.99&minLastUsed=2026-01-01T00:00:00.000Z&maxLastUsed=2027-01-01T00:00:00.000Z&minApplicationCreatedAt=2026-01-01T00:00:00.000Z&maxApplicationCreatedAt=2027-01-01T00:00:00.000Z",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "v1",
+                "applications",
+                ":applicationId",
+                "analytics",
+                "licenseAssignments",
+                "statistics"
+              ],
+              "query": [
+                {
+                  "key": "startTime",
+                  "value": "2026-05-01T00:00:00.000Z"
+                },
+                {
+                  "key": "endTime",
+                  "value": "2026-06-01T00:00:00.000Z"
+                },
+                {
+                  "key": "accountId",
+                  "value": "{{analytics.account_id}}"
+                },
+                {
+                  "key": "userId",
+                  "value": "{{analytics.user_id}}"
+                },
+                {
+                  "key": "licenseId",
+                  "value": "{{analytics.license_id}}"
+                },
+                {
+                  "key": "email",
+                  "value": "pavol.vytykac@usu.com"
+                },
+                {
+                  "key": "minLicenseCost",
+                  "value": "0.00"
+                },
+                {
+                  "key": "maxLicenseCost",
+                  "value": "99.99"
+                },
+                {
+                  "key": "minLastUsed",
+                  "value": "2026-01-01T00:00:00.000Z"
+                },
+                {
+                  "key": "maxLastUsed",
+                  "value": "2027-01-01T00:00:00.000Z"
+                },
+                {
+                  "key": "minApplicationCreatedAt",
+                  "value": "2026-01-01T00:00:00.000Z"
+                },
+                {
+                  "key": "maxApplicationCreatedAt",
+                  "value": "2027-01-01T00:00:00.000Z"
+                }
+              ],
+              "variable": [
+                {
+                  "key": "applicationId",
+                  "value": "{{analytics.application_id}}"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "analytics.application_id",
+      "value": ""
+    },
+    {
+      "key": "analytics.license_id",
+      "value": ""
+    },
+    {
+      "key": "analytics.license_id",
+      "value": ""
+    },
+    {
+      "key": "analytics.account_id",
+      "value": ""
+    },
+    {
+      "key": "analytics.user_id",
+      "value": ""
+    }
+  ]
+}

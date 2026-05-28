@@ -1,4 +1,4 @@
-package net.pvytykac.modularapp.analytics.internal;
+package net.pvytykac.modularapp.analytics.internal.fact.license;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
@@ -18,7 +18,7 @@ import java.util.List;
 @RequiredArgsConstructor
 class ApplicationAnalyticsController {
 
-    private final LicenseAssignmentRepository repository;
+    private final LicenseAssignmentFactRepository repository;
 
     @GetMapping("/dailyBreakdown")
     public ApplicationDailyBreakdownResponse getApplicationLicenseAssignmentBreakdown(
